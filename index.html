@@ -14,36 +14,20 @@
     <p>Software Developer | B.Tech Graduate</p>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#employment">Employment History</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#hobbies">Hobbies & Interests</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#employment">Employment History</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#hobbies">Hobbies & Interests</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
+  </header><br><br><br>
 
   <main>
     <section id="about">
       <h2>About Me</h2>
       <p>Hi, I'm Varunraj Kasanagottu, an aspiring Software Developer with hands-on experience gained during a 3-month internship at Assetsense. Based in Hyderabad, I specialize in Full Stack Development, where I’ve been able to combine my passion for creativity with technical skills to build responsive and user-friendly digital solutions.</p>
-
-       <p><strong>Skills & Expertise</strong></p>
-        
-       <p>I'm proficient in HTML,CSS,Java,Python,DBMS,Computer Networks and I thrive in both collaborative environments and independent projects. My work is driven by a strong belief in simplicity, user-first design, or accessibility</p> 
-        
-       <p><strong>What I Bring to the Table</strong></p>
-        
-        <p>What sets me apart is my ability to balance creative design with practical functionality, ensuring that every project I take on not only looks great but works seamlessly for end-users. I'm always looking for innovative ways to push boundaries and create solutions that leave a lasting impact.</p>
-        
-        <p><strong>Outside of Work</strong></p>
-        
-        <p>When I’m not working on projects, I enjoy exploring new design trends, contributing to open-source projects, or learning about emerging technologies. These passions keep me constantly evolving and expanding my skill set.</p>
-        
-        <p><strong>Let's Connect</strong></p>
-        
-        <p>If you're looking for a Software Developer who’s passionate about creating impactful solutions, feel free to reach out. I'd love to discuss how we can collaborate or bring your next project to life.</p>
     </section>
 
     <section id="employment">
@@ -101,5 +85,19 @@
   <footer>
     <p>&copy; 2024 Varunraj Kasanagottu</p>
   </footer>
+
+  <script>
+    // Get all the navigation links
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        // Remove the active class from all links
+        navLinks.forEach(link => link.classList.remove('active'));
+        // Add the active class to the clicked link
+        this.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
